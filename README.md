@@ -128,7 +128,7 @@ The project follows an Agile-based approach, with work organised into Epics, Fea
 
 **Programme:** Diploma in Information Technology in Software Development
 
-**Module:** Work Integrated Learning (WIL)
+**Module:** Work Integrated Learning (XISD)
 
 **Academic Year:** 2026
 
