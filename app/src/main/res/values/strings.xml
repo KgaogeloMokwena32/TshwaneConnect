@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Application Name -->
+    <string name="app_name">TLF Connect</string>
+
+    <!-- Splash Screen -->
+    <string name="tlf_logo_description">Tshwane Leadership Foundation Logo</string>
+    <string name="organisation_name">TSHWANE LEADERSHIP FOUNDATION</string>
+    <string name="programme_title">TLF PROGRAMMES</string>
+
+</resources>

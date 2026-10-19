@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- INTERNET ACCESS FOR FIREBASE -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TshwaneConnect">
+
+        <!-- SPLASH SCREEN -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <!-- LOGIN SCREEN -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- REGISTRATION SCREEN -->
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- STAFF DASHBOARD -->
+        <activity
+            android:name=".DashboardActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- ADMINISTRATOR DASHBOARD -->
+        <activity
+            android:name=".AdminDashboardActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- PROGRAMMES SCREEN -->
+        <activity
+            android:name=".ProgrammesActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- EVENTS SCREEN -->
+        <activity
+            android:name=".EventsActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- ADD EVENT: STEP 1 -->
+        <activity
+            android:name=".AddEventStep1Activity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- ADD EVENT: STEP 2 -->
+        <activity
+            android:name=".AddEventStep2Activity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- ADD EVENT: STEP 3 -->
+        <activity
+            android:name=".AddEventStep3Activity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- EVENT DETAILS -->
+        <activity
+            android:name=".EventDetailsActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- EDIT EVENT -->
+        <activity
+            android:name=".EditEventActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- CASES SCREEN -->
+        <activity
+            android:name=".CasesActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- ADD CASE -->
+        <activity
+            android:name=".AddCaseActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- CASE DETAILS -->
+        <activity
+            android:name=".CaseDetailsActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- EDIT CASE -->
+        <activity
+            android:name=".EditCaseActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- REPORTS SCREEN -->
+        <activity
+            android:name=".ReportsActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- NOTIFICATIONS SCREEN -->
+        <activity
+            android:name=".NotificationsActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- MORE SCREEN -->
+        <activity
+            android:name=".MoreActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- SETTINGS SCREEN -->
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- PRIVACY AND SECURITY SCREEN -->
+        <activity
+            android:name=".PrivacySecurityActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- PROFILE SCREEN -->
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+    </application>
+
+</manifest>

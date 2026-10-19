@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F7FB"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- NAVY HEADER -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#050B63"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/btnBackEventDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="Go back"
+                android:padding="8dp"
+                android:text="‹"
+                android:textColor="#FFFFFF"
+                android:textSize="32sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:text="Event Details"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <!-- EVENT IMAGE -->
+        <ImageView
+            android:id="@+id/ivEventDetailsImage"
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:background="#E4E8F0"
+            android:contentDescription="Event image"
+            android:scaleType="centerCrop"
+            android:visibility="gone" />
+
+        <!-- EVENT INFORMATION -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <!-- EVENT TITLE -->
+            <TextView
+                android:id="@+id/tvEventDetailsTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Event Title"
+                android:textColor="#050B63"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+            <!-- DATE -->
+            <TextView
+                android:id="@+id/tvEventDetailsDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Date"
+                android:textColor="#26334A"
+                android:textSize="16sp" />
+
+            <!-- TIME -->
+            <TextView
+                android:id="@+id/tvEventDetailsTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Time"
+                android:textColor="#26334A"
+                android:textSize="16sp" />
+
+            <!-- VENUE -->
+            <TextView
+                android:id="@+id/tvEventDetailsVenue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Venue"
+                android:textColor="#26334A"
+                android:textSize="16sp" />
+
+            <!-- CLICKABLE ADDRESS -->
+            <TextView
+                android:id="@+id/tvEventDetailsAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:contentDescription="Open event address in Google Maps"
+                android:paddingVertical="8dp"
+                android:text="Address"
+                android:textColor="#050B63"
+                android:textSize="16sp" />
+
+            <!-- VIEW ON GOOGLE MAPS BUTTON -->
+            <Button
+                android:id="@+id/btnViewOnMaps"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="12dp"
+                android:backgroundTint="#E4E8F0"
+                android:text="📍 View on Google Maps"
+                android:textAllCaps="false"
+                android:textColor="#050B63"
+                android:textSize="16sp" />
+
+            <!-- ADD TO CALENDAR BUTTON -->
+            <Button
+                android:id="@+id/btnAddToCalendar"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="12dp"
+                android:backgroundTint="#050B63"
+                android:text="Add to Calendar"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+            <!-- DIVIDER -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="24dp"
+                android:background="#E0E4EB" />
+
+            <!-- DESCRIPTION HEADING -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:text="About This Event"
+                android:textColor="#050B63"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <!-- EVENT DESCRIPTION -->
+            <TextView
+                android:id="@+id/tvEventDetailsDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:lineSpacingExtra="5dp"
+                android:text="Event description will appear here."
+                android:textColor="#4B5563"
+                android:textSize="15sp" />
+
+            <!-- EDIT EVENT BUTTON -->
+            <Button
+                android:id="@+id/btnEditEvent"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="32dp"
+                android:backgroundTint="#050B63"
+                android:text="Edit Event"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+            <!-- DELETE EVENT BUTTON -->
+            <Button
+                android:id="@+id/btnDeleteEvent"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="12dp"
+                android:backgroundTint="#B42318"
+                android:text="Delete Event"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+            <!-- BACK TO EVENTS BUTTON -->
+            <Button
+                android:id="@+id/btnBackToEvents"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="12dp"
+                android:backgroundTint="#E4E8F0"
+                android:text="Back to Events"
+                android:textAllCaps="false"
+                android:textColor="#050B63"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F7FB"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- HEADER -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#050B63"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/btnBackPrivacy"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:contentDescription="Go back"
+                android:gravity="center"
+                android:text="‹"
+                android:textColor="#FFFFFF"
+                android:textSize="32sp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Privacy &amp; Security"
+                    android:textColor="#FFFFFF"
+                    android:textSize="23sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="TLF Connect • Staff Application"
+                    android:textColor="#DCE2FF"
+                    android:textSize="13sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- MAIN CONTENT -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Your Privacy Matters"
+                android:textColor="#050B63"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Understand how this demonstration application handles information and what security measures are still required."
+                android:textColor="#64748B"
+                android:textSize="14sp" />
+
+            <!-- DEMONSTRATION WARNING -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="#FFF4CE"
+                android:orientation="vertical"
+                android:padding="18dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="⚠ DEMONSTRATION APPLICATION"
+                    android:textColor="#725400"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="TLF Connect is currently a prototype. Do not enter real beneficiary details, confidential case information, passwords used elsewhere, or other sensitive personal information."
+                    android:textColor="#725400"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <!-- SECTION 1 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:text="1. Local Data Storage"
+                android:textColor="#050B63"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#FFFFFF"
+                android:padding="18dp"
+                android:text="Demonstration cases, events, and application preferences are stored locally on this device using Android SharedPreferences. This storage is not a secure case-management database. Records may remain on the device until the application data is cleared or the application is uninstalled."
+                android:textColor="#334155"
+                android:textSize="14sp"
+                android:lineSpacingExtra="4dp" />
+
+            <!-- SECTION 2 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:text="2. Account Security"
+                android:textColor="#050B63"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#FFFFFF"
+                android:padding="18dp"
+                android:text="The current Login and Registration screens are for demonstration purposes. Real user authentication, staff identity verification, secure password handling, and role-based access controls have not yet been implemented. The Log Out button currently returns users to the Login screen without ending a verified account session."
+                android:textColor="#334155"
+                android:textSize="14sp"
+                android:lineSpacingExtra="4dp" />
+
+            <!-- SECTION 3 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:text="3. Beneficiary Confidentiality"
+                android:textColor="#050B63"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#FFFFFF"
+                android:padding="18dp"
+                android:text="All case records entered during development must be fictional. Do not use real names, addresses, identification numbers, health information, contact details, or confidential information about people supported by Tshwane Leadership Foundation."
+                android:textColor="#334155"
+                android:textSize="14sp"
+                android:lineSpacingExtra="4dp" />
+
+            <!-- SECTION 4 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:text="4. Offline Application"
+                android:textColor="#050B63"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#FFFFFF"
+                android:padding="18dp"
+                android:text="The current demonstration features use local device storage and do not require an online backend. Changes made on one device are not automatically synchronised with other staff devices. Offline operation alone does not guarantee data security."
+                android:textColor="#334155"
+                android:textSize="14sp"
+                android:lineSpacingExtra="4dp" />
+
+            <!-- SECTION 5 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:text="5. Before Real-World Deployment"
+                android:textColor="#050B63"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#FFFFFF"
+                android:padding="18dp"
+                android:text="Before this application can be used for real staff operations, it requires secure authentication, staff access controls, encrypted storage where appropriate, secure data handling, a defined retention policy, and a privacy review aligned with South Africa's Protection of Personal Information Act (POPIA)."
+                android:textColor="#334155"
+                android:textSize="14sp"
+                android:lineSpacingExtra="4dp" />
+
+            <!-- ACKNOWLEDGEMENT -->
+            <CheckBox
+                android:id="@+id/checkPrivacyAcknowledgement"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="26dp"
+                android:buttonTint="#050B63"
+                android:padding="10dp"
+                android:text="I understand that TLF Connect is a demonstration application and must only be used with fictional test information."
+                android:textColor="#334155"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btnSavePrivacyAcknowledgement"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="#050B63"
+                android:text="Save Acknowledgement"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btnPrivacyBackMore"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#E4E8F0"
+                android:text="Back to More"
+                android:textAllCaps="false"
+                android:textColor="#050B63"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
